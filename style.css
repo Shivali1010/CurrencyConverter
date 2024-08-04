@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html {
+    font-size: 16px;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #011c2d;
+}
+
+.container {
+    min-width: 33vw;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 3.5rem 2.5rem;
+    border-radius: 1rem;
+    border: 0.07rem solid rgba(255, 255, 255, 0.2);
+}
+
+h2 {
+    margin: 0 0 2.5rem 0;
+    text-align: center;
+    color: goldenrod;
+}
+
+form input, select, button {
+    border: none;
+    outline: none;
+    width: 100%;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+form input {
+    font-size: 1rem;
+    background-color: #011c2d;
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 0.6rem;
+}
+form select {
+    background-color: transparent;
+    padding: 0.3rem;
+    font-size: 1.1rem;
+    margin-left: 0.3rem;
+}
+form select option {
+    background-color: #011c2d;
+}
+p {
+    padding-left: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+form .dropdown {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0 3rem 0;
+}
+form .dropdown .select-container {
+    background-color: #011c2d3b;
+    border: 0.1rem solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.3rem;
+}
+form .dropdown img {
+    margin: 0;
+    height: 3.5rem;
+}
+form .dropdown i {
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+form .message {
+    text-align: center;
+    padding-left: 0.4rem;
+    font-size: 1.1rem;
+}
+form .message strong {
+    color: rgb(237, 191, 73);
+    font-size: 1.3rem;
+}
+form .button {
+    background-color: goldenrod;
+    color:#01263d;
+    font-weight: bold;
+    padding: 0.6rem;
+    margin-top: 3rem;
+    border-radius: 1.2rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+form .button:hover {
+    background-color: rgba(218, 165, 32, 0.674);
+}
+
+@media only screen and (max-width: 1300px) {
+    .container {
+        width: 40vw;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .container {
+        width: 50vw;
+    }
+}
+@media only screen and (max-width: 850px) {
+    html {
+        font-size: 14px;
+    }
+    .container {
+        width: 55vw;
+    }
+    form .dropdown img {
+        height: 3.5rem;
+    }
+    form .dropdown i {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .container {
+        width: 60vw;
+    }
+    form .dropdown img {
+        height: 3rem;
+    }
+    form .dropdown i {
+        font-size: 1.2rem;
+    }
+}
+@media only screen and (max-width: 550px) {
+    html {
+        font-size: 13px;
+    }
+    .container {
+        width: 80vw;
+    }
+    form .dropdown {
+        display: flex;
+        flex-direction: column;
+        margin: 2rem 0;
+    }
+    form .dropdown .from,
+    form .dropdown .to {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+    }
+    form .dropdown i {
+        transform: rotate(90deg);
+        margin-bottom: 1rem;
+    }
+}
